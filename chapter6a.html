@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outpatient Care | Eye Care Design</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Architectural Manual</h2> 
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+            <div class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#guidelines">Guidelines</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="sidebar-toggle-btn" id="sidebarToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="chapter-container">
+        <aside class="chapter-sidebar" id="chapterSidebar">
+            <div class="sidebar-header">
+                <div class="close-btn sidebar-close-btn" id="sidebarCloseBtn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <h3>Outpatient Care</h3>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <div class="nav-link parent-link active" data-content="intro">
+                            <i class="far fa-circle"></i>
+                            <span>Introduction</span>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <div class="nav-link parent-link" data-content="factors-influencing">
+                            <i class="far fa-circle"></i>
+                            <span>A) Factors influencing space</span>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </div>
+                        <ul class="nav-sublist-level2">
+                            <li class="nav-subitem-level2">
+                                <div class="nav-link subsection-link" data-content="service-levels">
+                                    <i class="far fa-dot-circle"></i>
+                                    <span>1. Service levels of care</span>
+                                </div>
+                            </li>
+                            <li class="nav-subitem-level2">
+                                <div class="nav-link subsection-link" data-content="layout-design">
+                                    <i class="far fa-dot-circle"></i>
+                                    <span>2. Layout design</span>
+                                </div>
+                            </li>
+                            <li class="nav-subitem-level2">
+                                <div class="nav-link subsection-link" data-content="investigation-area">
+                                    <i class="far fa-dot-circle"></i>
+                                    <span>3. Investigation & procedure area</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <div class="nav-link parent-link" data-content="preferred-practices">
+                            <i class="far fa-circle"></i>
+                            <span>B) Preferred practices</span>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="nav-link parent-link" data-content="resources">
+                            <i class="far fa-circle"></i>
+                            <span>List of resources</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="chapter-content">
+            <div class="content-wrapper">
+                <div class="content-header">
+                    <div class="breadcrumb" id="breadcrumbNav">
+                    </div>
+                    <!-- 50th Logo OUTSIDE breadcrumb box -->
+                    <div class="chapter-logo-container">
+                        <img src="50 th_Final_Logo_2025_Black.png" alt="Aravind Eye Care Logo" class="chapter-logo">
+                    </div>
+                </div>
+
+                <article class="main-article">
+                    <div class="content-block" id="content-intro">
+                        <h1 class="article-title">Outpatient care – design considerations and guidelines</h1>
+                        
+                        <div style="background: #f8f9fa; padding: 20px; border-left: 4px solid #c9a961; margin: 20px 0;">
+                            <p>Building layout design depends on the available space, service mix and planned volumes. Hence, providing a prescribed layout design for an eye hospital is not feasible. Instead, this architecture guide focuses on preferred practices and considerations for designing an eye hospital. To make it practical, detailing is provided at a unit level. It is hoped that the planners would find this approach useful for the discussions to design the layout.</p>
+                            
+                            <p><strong>To help with this, three sets of resources are included in this section:</strong></p>
+                            <ul>
+                                <li><strong>High-level layouts (PDFs)</strong> - as models to develop a better understanding of the flows, set-up, adjacencies, etc.</li>
+                                <li><strong>Layouts at the unit level (PDFs)</strong> of consultation rooms, refraction lanes, investigation areas, etc.</li>
+                                <li><strong>Detailed checklists</strong> – The checklists in the MS-Excel version are designed as tools for the planners to play with. The versions can be downloaded to work out the requirements (space, flows, electrical and waterline layouts, IT networks, etc.).</li>
+                            </ul>
+                        </div>
+
+                        <p>The recent technological advancements in ophthalmic clinical sciences have created an opportunity to provide comprehensive eye care allowing better diagnosis and widening the scope of treatment even for advanced eye conditions in both the anterior and posterior segments. This is further augmented by the integration of artificial intelligence, the Internet of Things (IoT), imaging technologies, etc. All these significantly impact the design and space requirements of eye hospitals with the treatment practices in eye care becoming more ambulatory.</p>
+                        
+                        <p>Thus the need to allocate a larger space of 50% + of the total built-up area for outpatient services has become a new norm. This section will explore the impact of outpatient flow on space requirements and layout design in eye clinics and provide best practices for optimal space planning and patient flow.</p>
+                    </div>
+
+                    <div class="content-block" id="content-factors-influencing" style="display: none;">
+                        <h1 class="article-title">Section - A </h1>
+                        <h1>Factors influencing space considerations for an outpatient clinic</h1>
+                        
+                        <p>The range of services and patient volumes will determine the extent of diagnostics that will be made available in an eye hospital and thereby influence space planning. The key factors are discussed in the section below:</p>
+
+                        <div style="background: #f8f9fa; padding: 20px; margin: 20px 0; border-radius: 8px;">
+                            <h3 style="color: #c9a961;">Topics covered in this section:</h3>
+                            <ol style="font-size: 1.1em; line-height: 1.8;">
+                                <li><strong>Service levels of care delivery</strong> - Understanding the hierarchy and scope of services</li>
+                                <li><strong>Layout design of an outpatient consultation area</strong> - Optimizing space utilization and patient flow</li>
+                                <li><strong>Investigation & procedure area</strong> - Planning for diagnostic and treatment spaces</li>
+                            </ol>
+                            <p style="margin-top: 15px;"><em>Please select a topic from the sidebar to explore detailed guidelines and considerations.</em></p>
+                        </div>
+                    </div>
+
+                    <!-- A1) Service Levels -->
+                    <div class="content-block" id="content-service-levels" style="display: none;">
+                        <h1 class="article-title">1. Service levels of care delivery</h1>
+                        
+                        <h2 style="color: #c9a961; margin-top: 30px; margin-bottom: 15px;">Secondary level:</h2>
+                        <p>Secondary level focuses primarily on refractive errors and cataract surgery. Diagnostics would include assessment of both ophthalmic and systemic conditions. Space required for diagnostics and investigations in secondary eye care would typically be less than what is required to accommodate doctors consulting rooms, refraction lanes, waiting areas, counselling, etc. A few other practices do exist:</p>
+                        <ul style="margin-left: 30px; margin-top: 15px; line-height: 1.8;">
+                            <li>Some hospitals may be equipped to carry out comprehensive diagnostics to assess both anterior and posterior segments as well as the medical management (lasers for yag capsulotomy/glaucoma/diabetic retinopathy)</li>
+                            <li>Some may run specific clinic days through visiting consultants who may provide surgical services for subspeciality conditions on specific periodicity every month</li>
+                        </ul>
+                        
+                        <h2 style="color: #c9a961; margin-top: 30px; margin-bottom: 15px;">Tertiary Level:</h2>
+                        <p>In addition to the above, hospitals are equipped and resourced adequately to provide comprehensive care for patients routinely. The space planning for outpatient services is determined by the patient volumes. For example, high-volume settings with significant subspeciality volumes could justify standalone subspecialty clinics. In low-patient volume settings, it would be more pragmatic to have a common investigation area, connected to various subspecialty consulting rooms since they use the same diagnostic equipment (eg. OCT); secondly, they are expensive and third, require an additional number of skilled staff to operate them which would add to the fixed costs especially if the volumes do not justify the additional workforce.</p>
+                        
+                        <p style="margin-top: 20px;">The ancillary clinical services such as optical services, pharmacy, biochemistry and microbiology labs, and examination by physicians (to assess systemic fitness) would require additional space if the eye hospitals decide to offer them inhouse – Making these services available under one roof provides a one-stop service for patients resulting in better compliance to treatment and patient experience.</p>
+                        
+                        <h2 style="color: #c9a961; margin-top: 40px; margin-bottom: 15px;">Patient flow in a typical outpatient clinic</h2>
+                        <p>A typical outpatient clinic would consist of the following:</p>
+                        <ul style="margin-left: 30px; margin-top: 15px; line-height: 1.8;">
+                            <li>Patient registration & cash counters</li>
+                            <li>Waiting for areas for different stations</li>
+                            <li>Refraction lanes</li>
+                            <li>Consultation suites</li>
+                            <li>Investigations</li>
+                            <li>Outpatient procedure area</li>
+                            <li>Counselling (to improve service uptake)</li>
+                            <li>Processing patients with insurance where applicable</li>
+                            <li>Dispensing outlets such as optical, pharmacy, etc.</li>
+                        </ul>
+
+                        <h3 style="color: #c9a961; margin-top: 30px; margin-bottom: 15px;">The general patient flow in an outpatient clinic would be as follows:</h3>
+                        
+                        <div style="margin: 30px 0; text-align: center;">
+                            <img src="Chapter-5/Section 6A/Picture2.jpg" 
+                                 alt="Patient Flow Diagrams" 
+                                 onclick="openImageModal(this.src, 'Patient Flow Diagrams')"
+                                 style="max-width: 100%; height: auto; cursor: pointer; border: 2px solid #e0e0e0; border-radius: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                                 onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'"
+                                 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                        </div>
+
+                        <p style="margin-top: 30px;">In addition to the above, support services and amenities such as a cafeteria, drinking water points, washrooms, etc. need to be located in the outpatient area.</p>
+                        
+                        <p style="margin-top: 20px;">A significant proportion (60% to 70%) of outpatients visiting an eye hospital typically present with eye conditions that may require medication or spectacles and sometimes,</p>
+
+                        <!-- Treatment Distribution Chart - Clickable Image -->
+                        <div style="margin: 30px 0; text-align: center;">
+                            <img src="Chapter-5\Section 6A\Picture3.jpg" 
+                                 alt="Treatment Distribution Chart" 
+                                 onclick="openImageModal(this.src, 'Treatment Distribution Chart')"
+                                 style="max-width: 100%; height: auto; cursor: pointer; border: 2px solid #e0e0e0; border-radius: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                                 onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'"
+                                 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                        </div>
+
+                        <p>may not require any intervention at all. The rest of the patients may require additional investigations followed by specific interventions that are carried out either in the outpatient area (lasers or foreign body removals) or in an operation theatre (surgeries, intra-vitreal injections, etc.). In certain regions, more in the west, anti-VEGF injections are administered directly in the outpatient department.</p>
+
+                        <!-- Download Buttons Section - UPDATED WITH 2 BUTTONS -->
+                        <div style="background: #fff; border: 2px solid #c9a961; padding: 30px; margin: 40px 0; border-radius: 8px;">
+                            <div style="margin-bottom: 25px;">
+                                <h4 style="margin-bottom: 15px; color: #2c2c2c;">
+                                    Checklist 1 – List of services and investigations
+                                </h4>
+                                <div class="resource-buttons">
+                                    <button onclick="openFileViewer('1 - OPD - List of Services and Investigations_for HTML.pdf', 'pdf')" class="btn-resource">
+                                        <i class="fas fa-eye"></i> Click to view pdf
+                                    </button>
+                                    <a href="1 - OPD - List of Services and Investigations_for HTML.xlsx" download class="btn-resource">
+                                        <i class="fas fa-download"></i> Click to download excel
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 0;">
+                                <h4 style="margin-bottom: 15px; color: #2c2c2c;">
+                                    Checklist 2 – Equipment and furniture requirements
+                                </h4>
+                                <div class="resource-buttons">
+                                    <button onclick="openFileViewer('2 - OPD - Checklist for Equipment & Furniture Requirements_for HTML.pdf', 'pdf')" class="btn-resource">
+                                        <i class="fas fa-eye"></i> Click to view pdf 
+                                    </button>
+                                    <a href="2 - OPD - Checklist for Equipment & Furniture Requirements_for HTML.xlsx" download class="btn-resource">
+                                        <i class="fas fa-download"></i> Click to download excel
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A2) Layout Design -->
+                    <div class="content-block" id="content-layout-design" style="display: none;">
+                        <h1 class="article-title">2. Layout design of an outpatient consultation area</h1>
+                        
+                        <p>The layout of an outpatient clinic is heavily influenced by the workflow protocol followed for the eye exams, which typically includes four key components:</p>
+                        <ol style="margin-left: 30px; margin-top: 15px; line-height: 1.8;">
+                            <li><strong>(a)</strong> Taking history</li>
+                            <li><strong>(b)</strong> Assessing vision, performing undilated/dilated refraction</li>
+                            <li><strong>(c)</strong> Assessments such as measuring blood pressure and intraocular pressure, OCT, fundus imaging, the field of vision assessment</li>
+                            <li><strong>(d)</strong> Consultation with an ophthalmologist</li>
+                        </ol>
+                        
+                        <p style="margin-top: 20px;">Diagnostics for advanced eye conditions will be carried out if suggested by the doctor. Two types of workflow/patient flow are widely practised:</p>
+
+                        <h2 style="color: #c9a961; margin-top: 30px; margin-bottom: 15px;">(i) Multi-station workflow</h2>
+                        <p>In low and middle-income countries, the multi-station workflow is followed predominantly which requires patients to move from one station to another while the corresponding staff remains in their designated stations to perform their functions.</p>
+
+                        <h2 style="color: #c9a961; margin-top: 30px; margin-bottom: 15px;">(ii) Stationary model</h2>
+                        <p>The stationary model allows for carrying out common assessments and doctors' consultations in fully equipped consultation suites. In this model, patients stay in the same consultation room while the doctors and staff may rotate between exam rooms to perform their clinical duties.</p>
+                        
+                        <p style="margin-top: 20px;">In both models, consultation rooms are often connected through service corridors to enable staff to move freely without disrupting patient traffic.</p>
+                        
+                        <div style="background: #f8f9fa; padding: 20px; border-left: 4px solid #c9a961; margin: 30px 0;">
+                            <p>Though the overall size of an outpatient clinic may not vary between the two models, there will be noticeable differences in the layout design as well as the patient throughput. These differences can include room sizes and layouts, corridors designed to facilitate staff movement, patient waiting areas, equipment needs, and more. The decision to adopt a particular model is based on several factors, such as the cost, available staffing, and local cultural preferences of the community being served.</p>
+                        </div>
+
+                        <div style="background: #fff; border: 2px solid #c9a961; padding: 30px; margin: 40px 0; border-radius: 8px;">
+                            <div style="margin-bottom: 30px;">
+                                <h4 style="margin-bottom: 20px; color: #2c2c2c; font-size: 1.1em;">
+                                    Layout 1 –Layout design of a consultation room
+                                </h4>
+                                
+                                <div style="margin-left: 20px;">
+                                    <div style="margin-bottom: 20px;">
+                                        <p style="margin-bottom: 10px; font-weight: 600;">Consultation room 1</p>
+                                        <div class="resource-buttons">
+                                            <button onclick="openFileViewer('1a - Consultation Room.pdf', 'pdf')" class="btn-resource">
+                                                <i class="fas fa-eye"></i> Click to view pdf
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-bottom: 20px;">
+                                        <p style="margin-bottom: 10px; font-weight: 600;">Consultation room – different settings</p>
+                                        <div class="resource-buttons">
+                                            <button onclick="openFileViewer('1b - Consultation Room - Different Settings.pdf', 'pdf')" class="btn-resource">
+                                                <i class="fas fa-eye"></i> Click to view pdf
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-bottom: 20px;">
+                                        <p style="margin-bottom: 10px; font-weight: 600;">Consultation room 2 (Paediatric)</p>
+                                        <div class="resource-buttons">
+                                            <button onclick="openFileViewer('2 - Paediatric examination room.pdf', 'pdf')" class="btn-resource">
+                                                <i class="fas fa-eye"></i> Click to view pdf
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-bottom: 20px;">
+                                        <p style="margin-bottom: 10px; font-weight: 600;">Consultation room – 3D Rendition</p>
+                                        <div class="resource-buttons">
+                                            <button onclick="openFileViewer('1d - Consultation Room - 3D Rendition.pdf', 'pdf')" class="btn-resource">
+                                                <i class="fas fa-eye"></i> Click to View pdf
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 0;">
+                                <h4 style="margin-bottom: 20px; color: #2c2c2c; font-size: 1.1em;">
+                                    Layout 2 – Layout design of an outpatient clinic (Multi-station workflow model)
+                                </h4>
+                                <div class="resource-buttons" style="margin-left: 20px;">
+                                    <button onclick="openFileViewer('3 - OPD - Multi-station workflow of a secondary eye hospital.pdf', 'pdf')" class="btn-resource">
+                                        <i class="fas fa-eye"></i> Click to view pdf
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A3) Investigation Area -->
+                    <div class="content-block" id="content-investigation-area" style="display: none;">
+                        <h1 class="article-title">3.Investigation & procedure area</h1>
+                        
+                        <p>Ophthalmic care involves two levels of investigation.</p>
+
+                        <h2 style="color: #c9a961; margin-top: 30px; margin-bottom: 15px;">(i) Routine procedures</h2>
+                        <p>The routine procedures that are typically carried out as part of a regular consultation process such as refraction, measuring intraocular pressure and blood pressure for patients aged 40 and above, checking duct patency (applicable South East Asia), and biometry for individuals undergoing cataract surgery.</p>
+
+                        <h2 style="color: #c9a961; margin-top: 30px; margin-bottom: 15px;">(ii) Advanced diagnostics</h2>
+                        <p>Advanced diagnostics, such as optical Coherence Tomography (OCT), fundus imaging and Visual field analyzers, are indicated for patients with sub-specialty eye conditions.</p>
+
+                        <h2 style="color: #c9a961; margin-top: 30px; margin-bottom: 15px;">(iii) Procedure room(s)</h2>
+                        <p>Procedure room(s) to facilitate clinical procedures, performing laser treatments, a sterile area to administer intra-vitreal injections, foreign body/suture removals, etc.</p>
+
+                        <div style="background: #f8f9fa; padding: 20px; border-left: 4px solid #c9a961; margin: 30px 0;">
+                            <p>Key design consideration: Placing the diagnostics and procedure rooms as adjacencies to the consultation rooms, along with sufficient waiting areas, is crucial for maintaining a smooth and efficient patient flow.</p>
+                        </div>
+
+                        <!-- Investigation Resources Section - UPDATED WITH 2 BUTTONS -->
+                        <div style="background: #fff; border: 2px solid #c9a961; padding: 30px; margin: 40px 0; border-radius: 8px;">
+                            <p style="margin-bottom: 20px; color: #666;">The listed resources below include layout models for the basic investigation room, refraction lane, scan rooms that require dark room settings as well as multi-purpose investigation room. Planners can either view or download the layout models that are provided as PDFs.</p>
+
+                            <div style="margin-bottom: 25px;">
+                                <h4 style="margin-bottom: 15px; color: #2c2c2c;">
+                                    Layout 3: Refraction lane
+                                </h4>
+                                <div class="resource-buttons" style="margin-left: 20px;">
+                                    <button onclick="openFileViewer('4 - Refraction Unit.pdf', 'pdf')" class="btn-resource">
+                                        <i class="fas fa-eye"></i> Click to view pdf
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 25px;">
+                                <h4 style="margin-bottom: 15px; color: #2c2c2c;">
+                                    Layout 4: Investigation room – basic needs
+                                </h4>
+                                <div class="resource-buttons" style="margin-left: 20px;">
+                                    <button onclick="openFileViewer('5 - Investigation Room - Basic Need.pdf', 'pdf')" class="btn-resource">
+                                        <i class="fas fa-eye"></i> Click to view pdf
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 25px;">
+                                <h4 style="margin-bottom: 15px; color: #2c2c2c;">
+                                    Layout 5: Investigation room – multi-purpose room
+                                </h4>
+                                <p style="margin-left: 20px; margin-bottom: 10px; color: #666; font-size: 0.95em;">This can be used as a refraction room or for other investigations</p>
+                                <div class="resource-buttons" style="margin-left: 20px;">
+                                    <button onclick="openFileViewer('6 - Investigation Room - Comprehensive Module.pdf', 'pdf')" class="btn-resource">
+                                        <i class="fas fa-eye"></i> Click to view pdf
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 0;">
+                                <h4 style="margin-bottom: 15px; color: #2c2c2c;">
+                                    Layout 6: A typical scan room
+                                </h4>
+                                <div class="resource-buttons" style="margin-left: 20px;">
+                                    <button onclick="openFileViewer('6 - Multipurpose Scan room.pdf', 'pdf')" class="btn-resource">
+                                        <i class="fas fa-eye"></i> Click to view pdf
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- B) PREFERRED PRACTICES -->
+                    <div class="content-block" id="content-preferred-practices" style="display: none;">
+                        <h1 class="article-title">Section B</h1>
+                            <h1>Preferred practices in designing an outpatient clinic</h1>
+                        
+                        <!-- Practice 1: Standardized Room Sizes -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">1. Standardized room sizes and grid model</h2>
+                            
+                            <div style="display: flex; gap: 30px; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap;">
+                                <div style="flex: 1; min-width: 300px;">
+                                    <p>Adopting standardized room sizes would allow positioning the columns so that they don't come inside the rooms and thus give flexibility in room layout. This design involves constructing rooms with the same length but varying widths. This approach optimizes available space and allows for the placement of load-bearing reinforced concrete pillars without obstructing patient flow or examination areas. The table below provides an example of room dimensions based on this grid model.</p>
+                                </div>
+                                
+                                <div style="flex: 0 0 auto; min-width: 250px; text-align: center;">
+                                    <!-- Grid Model Diagram - Clickable Image -->
+                                    <img src="Chapter-5\Section 6A\Picture4.jpg" 
+                                         alt="Grid Model Diagram" 
+                                         onclick="openImageModal(this.src, 'Grid Model Diagram - Standardized Room Sizes')"
+                                         style="max-width: 100%; height: auto; cursor: pointer; border: 2px solid #e0e0e0; border-radius: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                                         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'"
+                                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Practice 2: Construction Type -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">2. Construction type</h2>
+                            <p>To accommodate increasing patient volumes and new clinical and support services, a well-run eye hospital is likely to undergo renovations. Opting for aluminium/plywood partitions or similar materials instead of walled rooms provides greater flexibility to redesign the space when changes are necessary. This approach makes renovations a cost-effective and quicker exercise. Therefore, the type of construction chosen for the hospital should take into consideration the need for future flexibility and adaptability.</p>
+                        </div>
+
+                        <!-- Practice 3: Standardized Workflow -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">3. Standardized workflow protocol</h2>
+                            <p>A streamlined linear flow of patients throughout the system is enabled by a standardized workflow protocol. This then becomes part of the design consideration. Therefore, it is highly advisable to standardize the clinical processes before consulting an architect.</p>
+                        </div>
+
+                        <!-- Practice 4: Room/Space Considerations -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">4. Considerations for each room/space</h2>
+                            <p style="margin-bottom: 15px;">As applicable:</p>
+                            
+                            <div style="margin-left: 20px;">
+                                <h3 style="color: #2c2c2c; font-size: 1.05em; margin-top: 20px; margin-bottom: 10px;">i. Power outlets based on source</h3>
+                                <ul style="margin-left: 20px; line-height: 1.8;">
+                                    <li><strong>Grid/Generator power:</strong> Standard supply for regular electric fixtures</li>
+                                    <li><strong>Uninterrupted Power Supply (UPS):</strong> To protect ophthalmic equipment, computers, and IT networks from voltage fluctuations, UPS is essential, particularly in low-middle-income countries where power supply could be erratic.</li>
+                                </ul>
+
+                                <h3 style="color: #2c2c2c; font-size: 1.05em; margin-top: 20px; margin-bottom: 10px;">ii. Water pipelines and drainage</h3>
+                                <p style="margin-left: 20px;">Handwashing facilities in the consultation rooms to reduce cross-infections.</p>
+
+                                <h3 style="color: #2c2c2c; font-size: 1.05em; margin-top: 20px; margin-bottom: 10px;">iii. LAN/Wireless connectivity</h3>
+                                <p style="margin-left: 20px;">For patient care management and the use of electronic medical records.</p>
+
+                                <h3 style="color: #2c2c2c; font-size: 1.05em; margin-top: 20px; margin-bottom: 10px;">iv. Flexible lighting and temperature settings</h3>
+                                <p style="margin-left: 20px;">Arrangements to meet the requirements for diagnostics as well as interventions.</p>
+                            </div>
+                        </div>
+
+                        <!-- Practice 5: Patient Privacy -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">5. Patient privacy</h2>
+                            <p>The design layout should prioritize patient privacy during the consultation process as per the local cultural preferences.</p>
+                        </div>
+
+                        <!-- Practice 6: Wider Doors -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">6. Wider doors and corridors</h2>
+                            <p>Consider designing wider doors at least in a few rooms and corridors to enable unrestricted movement of wheelchairs and stretchers.</p>
+                        </div>
+
+                        <!-- Practice 7: Wheelchair/Stretcher Alcove -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">7. Wheelchair/stretcher alcove</h2>
+                            <p>Provision of wheelchair/stretcher alcove in an accessible area.</p>
+                        </div>
+
+                        <!-- Practice 8: Disabled-Friendly Areas -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">8. Accessibility for patients with disabilities</h2>
+                            <p>Although patients with disabilities may be a minority among the outpatients who visit an eye hospital or clinic, it is crucial to provide them with equal access to facilities and services. Therefore, it is important to create disabled-friendly areas that offer wheelchair-accessible toilets, safety railings, and special arrangements for patient movement across different sections of the hospital. These considerations will help ensure that patients with disabilities can experience the same level of care and access as other patients.</p>
+                        </div>
+
+                        <!-- Practice 9: Anti-skid Flooring -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">9. Anti-skid flooring</h2>
+                            <p>Anti-skid flooring to reduce chances of a fall (for more details on patient safety, please refer to the section-Patient & staff safety).</p>
+                        </div>
+
+                        <!-- Practice 10: Utilities -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">10. Provision of utilities</h2>
+                            <p>Ensure provision of utilities such as toilets for staff and patients, water points, cafeteria, etc.</p>
+                        </div>
+
+                        <!-- Practice 11: Fire Safety -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">11. Fire safety</h2>
+                            <p>It is critical to consider the provision of fire safety (sprinklers, fire extinguishers, smoke detectors etc.) in adherence to local regulations in different locations of OPD.</p>
+                        </div>
+
+                        <!-- Practice 12: Public Address System & CCTV -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">12. Communication systems</h2>
+                            <p>A public address system and CCTV network that enables hospital-wide communication/providing instructions is desirable and should be included while planning the electrical network.</p>
+                        </div>
+
+                        <!-- Practice 13: Multiple Cash Counters -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">13. Multiple cash counters</h2>
+                            <p>Setting up multiple cash counters can eliminate unnecessary movement of patients/attendants and also reduce the waiting time. This is applicable either in the high volume settings or different services operational on different floors.</p>
+                        </div>
+
+                        <!-- Practice 14: Separate Toilets -->
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: #c9a961; margin-bottom: 15px;">14. Separate toilets</h2>
+                            <p>Planning for separate toilets for staff and patients in the OPD area.</p>
+                        </div>
+
+                        <!-- Resources for Section B - UPDATED WITH 2 BUTTONS -->
+                        <div style="background: #fff; border: 2px solid #c9a961; padding: 30px; margin: 40px 0; border-radius: 8px;">
+                            <p style="margin-bottom: 20px; color: #666;">This checklist can help the planners to determine the requirements for power supply & wattage, water connections, etc. Since wattage may vary in different countries, this can be discussed with the architect/engineers involved in the construction design and execution. Planners can view the checklist online as a PDF. This can also be downloaded to use it as a planning tool.</p>
+
+                            <div>
+                                <h4 style="margin-bottom: 15px; color: #2c2c2c;">
+                                    Checklist 3: Checklist to determine power supply, water connections, etc.
+                                </h4>
+                                <div class="resource-buttons">
+                                    <button onclick="openFileViewer('3 - OPD - Equipment & Power Requirements - Checklist_for HTML.pdf', 'pdf')" class="btn-resource">
+                                        <i class="fas fa-eye"></i> Click to view pdf
+                                    </button>
+                                    <a href="3 - OPD - Equipment & Power Requirements - Checklist_for HTML.xlsx" download class="btn-resource">
+                                        <i class="fas fa-download"></i> Click to download excel 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LIST OF RESOURCES -->
+                    <div class="content-block" id="content-resources" style="display: none;">
+                        <h1 class="article-title">List of resources</h1>
+                        
+                        <div class="resources-list">
+                            <!-- I. CHECKLISTS -->
+                            <div style="background: #f8f9fa; padding: 30px; margin: 30px 0; border-radius: 8px;">
+                                <h2 style="color: #c9a961; margin-bottom: 25px;">
+                                    I. Checklists
+                                </h2>
+
+                                <!-- Checklist 1 -->
+                                <div style="margin-bottom: 30px; padding-bottom: 25px; border-bottom: 1px solid #ddd;">
+                                    <h3 style="color: #2c2c2c; margin-bottom: 15px; font-size: 1.1em;">
+                                        1. Checklist 1 – List of services and investigations
+                                    </h3>
+                                    <div class="resource-buttons" style="margin-left: 20px;">
+                                        <button onclick="openFileViewer('1 - OPD - List of Services and Investigations_for HTML.pdf', 'pdf')" class="btn-resource">
+                                            <i class="fas fa-eye"></i> Click to view pdf
+                                        </button>
+                                        <a href="1 - OPD - List of Services and Investigations_for HTML.xlsx" download class="btn-resource">
+                                            <i class="fas fa-download"></i> Click to download excel  
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Checklist 2 -->
+                                 
+                                <div style="margin-bottom: 30px; padding-bottom: 25px; border-bottom: 1px solid #ddd;">
+                                    <h3 style="color: #2c2c2c; margin-bottom: 15px; font-size: 1.1em;">
+                                        2. Checklist 2 – Equipment and furniture requirements
+                                    </h3>
+                                    <div class="resource-buttons" style="margin-left: 20px;">
+                                        <button onclick="openFileViewer('2 - OPD - Checklist for Equipment & Furniture Requirements_for HTML.pdf', 'pdf')" class="btn-resource">
+                                            <i class="fas fa-eye"></i> Click to view pdf
+                                        </button>
+                                        <a href="2 - OPD - Equipment and Furniture Requirements_for HTML.xlsx" download class="btn-resource">
+                                            <i class="fas fa-download"></i> Click to download excel  
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Checklist 3 -->
+                                <div style="margin-bottom: 0;">
+                                    <h3 style="color: #2c2c2c; margin-bottom: 15px; font-size: 1.1em;">
+                                        3. Checklist 3 – Checklist to determine power supply, water connections, etc.
+                                    </h3>
+                                    <div class="resource-buttons" style="margin-left: 20px;">
+                                        <button onclick="openFileViewer('3 - OPD - Equipment & Power Requirements - Checklist_for HTML.pdf', 'pdf')" class="btn-resource">
+                                            <i class="fas fa-eye"></i> Click to view pdf
+                                        </button>
+                                        <a href="3 - OPD - Equipment & Power Requirements - Checklist_for HTML.xlsx" download class="btn-resource">
+                                            <i class="fas fa-download"></i> Click to download excel  
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- II. LAYOUTS -->
+                            <div style="background: #f8f9fa; padding: 30px; margin: 30px 0; border-radius: 8px;">
+                                <h2 style="color: #c9a961; margin-bottom: 25px;">
+                                    II. Layouts
+                                </h2>
+
+                                <!-- Layout 1 -->
+                                <div style="margin-bottom: 30px; padding-bottom: 25px; border-bottom: 1px solid #ddd;">
+                                    <h3 style="color: #2c2c2c; margin-bottom: 15px; font-size: 1.1em;">
+                                        4. Layout 1 – Layout design of a consultation room
+                                    </h3>
+                                    <div style="margin-left: 20px;">
+                                        <div style="margin-bottom: 20px;">
+                                            <p style="margin-bottom: 10px; font-weight: 500;">• Consultation room 1</p>
+                                            <div class="resource-buttons" style="margin-left: 15px;">
+                                                <button onclick="openFileViewer('1a - Consultation Room.pdf', 'pdf')" class="btn-resource">
+                                                    <i class="fas fa-eye"></i> Click to view pdf
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div style="margin-bottom: 20px;">
+                                            <p style="margin-bottom: 10px; font-weight: 500;">• Consultation room – different settings</p>
+                                            <div class="resource-buttons" style="margin-left: 15px;">
+                                                <button onclick="openFileViewer('1b - Consultation Room - Different Settings.pdf', 'pdf')" class="btn-resource">
+                                                    <i class="fas fa-eye"></i> Click to view pdf
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div style="margin-bottom: 20px;">
+                                            <p style="margin-bottom: 10px; font-weight: 500;">• Consultation room 2 (Paediatric)</p>
+                                            <div class="resource-buttons" style="margin-left: 15px;">
+                                                <button onclick="openFileViewer('2 - Paediatric examination room.pdf', 'pdf')" class="btn-resource">
+                                                    <i class="fas fa-eye"></i> Click to View pdf
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div style="margin-bottom: 0;">
+                                            <p style="margin-bottom: 10px; font-weight: 500;">• Consultation room – 3D rendition</p>
+                                            <div class="resource-buttons" style="margin-left: 15px;">
+                                                <button onclick="openFileViewer('1d - Consultation Room - 3D Rendition.pdf', 'pdf')" class="btn-resource">
+                                                    <i class="fas fa-eye"></i> Click to View pdf    
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Layout 2 -->
+                                <div style="margin-bottom: 30px; padding-bottom: 25px; border-bottom: 1px solid #ddd;">
+                                    <h3 style="color: #2c2c2c; margin-bottom: 15px; font-size: 1.1em;">
+                                        5. Layout 2 – Layout design of an outpatient clinic (Multi-station workflow model)
+                                    </h3>
+                                    <div class="resource-buttons" style="margin-left: 20px;">
+                                        <button onclick="openFileViewer('3 - OPD - Multi-station workflow of a secondary eye hospital.pdf', 'pdf')" class="btn-resource">
+                                            <i class="fas fa-eye"></i> Click to view pdf    
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Layout 3 -->
+                                <div style="margin-bottom: 30px; padding-bottom: 25px; border-bottom: 1px solid #ddd;">
+                                    <h3 style="color: #2c2c2c; margin-bottom: 15px; font-size: 1.1em;">
+                                        6. Layout 3 – Refraction lane
+                                    </h3>
+                                    <div class="resource-buttons" style="margin-left: 20px;">
+                                        <button onclick="openFileViewer('4 - Refraction Unit.pdf', 'pdf')" class="btn-resource">
+                                            <i class="fas fa-eye"></i> Click to view pdf
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Layout 4 -->
+                                <div style="margin-bottom: 30px; padding-bottom: 25px; border-bottom: 1px solid #ddd;">
+                                    <h3 style="color: #2c2c2c; margin-bottom: 15px; font-size: 1.1em;">
+                                        7. Layout 4 – Investigation room (Basic needs)
+                                    </h3>
+                                    <div class="resource-buttons" style="margin-left: 20px;">
+                                        <button onclick="openFileViewer('5 - Investigation Room - Basic Need.pdf', 'pdf')" class="btn-resource">
+                                            <i class="fas fa-eye"></i> Click to view pdf
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Layout 5 -->
+                                <div style="margin-bottom: 30px; padding-bottom: 25px; border-bottom: 1px solid #ddd;">
+                                    <h3 style="color: #2c2c2c; margin-bottom: 15px; font-size: 1.1em;">
+                                        8. Layout 5 – Investigation room (Multi-purpose room)
+                                    </h3>
+                                    <p style="margin-left: 20px; margin-bottom: 10px; color: #666; font-size: 0.95em;">This can be used as a refraction room or for other investigations</p>
+                                    <div class="resource-buttons" style="margin-left: 20px;">
+                                        <button onclick="openFileViewer('6 - Investigation Room - Comprehensive Module.pdf', 'pdf')" class="btn-resource">
+                                            <i class="fas fa-eye"></i> Click to view pdf
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div style="margin-bottom: 0;">
+                                    <h3 style="color: #2c2c2c; margin-bottom: 15px; font-size: 1.1em;">
+                                        9. Layout 6 – A typical scan room
+                                    </h3>
+                                    <div class="resource-buttons" style="margin-left: 20px;">
+                                        <button onclick="openFileViewer('6 - Multipurpose Scan room.pdf', 'pdf')" class="btn-resource">
+                                            <i class="fas fa-eye"></i> Click to View pdf
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="content-navigation-static">
+                    <button class="nav-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                        <span>Previous Chapter</span>
+                    </button>
+                    <button class="nav-btn next-btn" id="nextBtn">
+                        <span>Next</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- File Viewer Modal -->
+    <div id="fileViewerModal" class="modal" style="display: none;">
+        <div class="modal-content-large">
+            <div class="modal-header" style="display: flex; align-items: center; justify-content: space-between; padding: 15px 20px;">
+                <h2 id="fileViewerTitle" style="margin: 0; flex: 1; font-size: 1.2rem;">File Viewer</h2>
+                <button id="downloadButtonInViewer" onclick="downloadCurrentFile()" style="display: none; padding: 8px 16px; background: #c9a961; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 15px; font-size: 0.9rem; transition: background 0.3s;">
+                    <i class="fas fa-download"></i> Download
+                </button>
+                <span class="close-modal" onclick="closeFileViewer()" style="cursor: pointer; font-size: 28px; color: #666; font-weight: bold; line-height: 1;">&times;</span>
+            </div>
+            <div class="modal-body-viewer">
+                <div id="fileViewerError" style="display: none; text-align: center; padding: 40px;"></div>
+                <iframe id="fileViewerFrame" style="width: 100%; height: 70vh; border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.95);">
+        <span onclick="closeImageModal()" style="position: absolute; top: 20px; right: 40px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; z-index: 10001; transition: 0.3s;">&times;</span>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100%; padding: 40px;">
+            <div style="max-width: 90%; max-height: 90%; position: relative;">
+                <img id="modalImage" src="" alt="" style="width: 100%; height: auto; max-height: 85vh; object-fit: contain; border-radius: 8px;">
+                <div id="modalCaption" style="text-align: center; color: #fff; padding: 15px 0; font-size: 1.1em;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripit.js"></script>
+</body>
+</html>

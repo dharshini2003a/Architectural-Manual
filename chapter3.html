@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engaging the Architect | Eye Care Design</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Architectural Manual</h2> 
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+            <div class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#guidelines">Guidelines</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="sidebar-toggle-btn" id="sidebarToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="chapter-container">
+        <aside class="chapter-sidebar" id="chapterSidebar">
+            <div class="sidebar-header">
+                <div class="close-btn sidebar-close-btn" id="sidebarCloseBtn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <h3>Engaging the Architect</h3>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <div class="nav-link parent-link active" data-content="intro">
+                            <i class="far fa-circle"></i>
+                            <span>A. Introduction</span>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-children">
+                        <div class="nav-link parent-link" data-content="approval-process">
+                            <i class="far fa-circle"></i>
+                            <span>B. Five Stage Process Integrated</span>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </div>
+
+                        <ul class="nav-sublist nav-sublist-level2">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link subsection-link" data-content="preliminary-design">
+                                    <i class="far fa-circle"></i>
+                                    <span>1. Preliminary Design Submission</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link subsection-link" data-content="concept-design">
+                                    <i class="far fa-circle"></i>
+                                    <span>2. Concept Design Submission</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link subsection-link" data-content="statutory-approval">
+                                    <i class="far fa-circle"></i>
+                                    <span>3. Statutory Approval Submission</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <div class="nav-link parent-link" data-content="flowchart">
+                            <i class="far fa-circle"></i>
+                            <span>C. Flow Chart</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="chapter-content">
+            <div class="content-wrapper">
+                <div class="content-header">
+                    <div class="breadcrumb" id="breadcrumbNav">
+                        <div class="breadcrumb-item">
+                            <a href="index.html" class="breadcrumb-link breadcrumb-primary">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </div>
+                        
+                        <span class="breadcrumb-dot">•</span>
+                        
+                        <div class="breadcrumb-item">
+                            <span class="breadcrumb-link breadcrumb-primary active">Engaging the Architect</span>
+                        </div>
+                    </div>
+
+                    <!-- 50th Logo OUTSIDE breadcrumb box -->
+                    <div class="chapter-logo-container">
+                        <img src="50 th_Final_Logo_2025_Black.png" alt="Aravind Eye Care Logo" class="chapter-logo">
+                    </div>
+                </div>
+
+                <article class="main-article">
+                    <!-- A. INTRODUCTION -->
+                    <div class="content-block" id="content-intro">
+                        <h1 class="article-title">Engaging the architect and design approval process</h1>
+                        
+                        <h3>A. Introduction</h3>
+                        
+                        <div class="article-intro">
+                            <p>The purpose of the design development and approval process is to ensure that the facility is designed to the acceptable and mandated standards, constructed within an acceptable budget and time frame, satisfying the functional, social, and aesthetic expectations of the client (the entity wanting to build the hospital) and patients. The role of the architect is paramount in this design process. Thus, there needs to be mutual clarity both on the design process and on the roles of the client and the architect. While the details are likely to vary from place to place based on the established practices, the following is proposed as a comprehensive template. In reality, the actual responsibility for specific items may shift between the client and the architect.</p>
+                        </div>
+                    </div>
+
+                    <!-- B. THE APPROVAL PROCESS -->
+                    <div class="content-block" id="content-approval-process" style="display: none;">
+                        <h1 class="article-title">B. The approval process - A five-stage process integrated within the general design process</h1>
+                        
+                        <p>The approval process consists of the following five stages as illustrated. This design and approval process if done well should ensure the construction drawing; documentation and execution stages can proceed without the need for any intervention from the client team. Each stage is marked with</p>
+
+                        <div style="text-align: center; margin: 30px 0;">
+                            <img src="Engaging the architect/Five stages flow.jpg" alt="Five-Stage Approval Process" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        </div>
+
+                        <p>This section will focus on stages I, II and IV in detail since the other two stages are straightforward in terms of the details.</p>
+                    </div>
+
+                    <!-- 1. PRELIMINARY DESIGN -->
+                    <div class="content-block" id="content-preliminary-design" style="display: none;">
+                        <h1 class="article-title">Key stages: 1.Preliminary design submission</h1>
+                        
+                        <h3>a) Purpose</h3>
+                        <p>To allow the client to identify major design anomalies or misunderstandings of the intent or any statutory/regulatory constraints that may affect the project schedule/outcome before the detailed development of the design. The first submission of the documentation is expected at the schematic design level. Approval in writing to proceed will be a prerequisite for stage II.</p>
+
+                        <h3>b) Process</h3>
+                        <p>Stage I submission will follow:</p>
+                        <ul>
+                            <li>Detailed study of guidelines and the statutory requirements by the architect, a visit to a similar facility, and a request for clarifications if any. The client team will clarify any aspects raised by the architect that may influence the preliminary design. This shall be accomplished within stipulated days of the architect being given these guidelines.</li>
+                            <li>The drawings and documents in compliance described on the deliverables for schematic submission shall be submitted in printed and digital form to the client within the prescribed time limit.</li>
+                            <li>The client shall evaluate the submission and in writing give comments/suggestions for a revised submission or for proceeding to stage II. If a revised submission is requested, the time for revision shall be agreed upon mutually.</li>
+                        </ul>
+                        <p>The approved documents are then lodged in both hard copy and soft copy (pdf) for documentation purposes by the client.</p>
+
+                        <h3>c) Considerations</h3>
+                        <p>Only two rounds of schematic submissions are recommended to ensure speedy progress. The client and the architect shall work closely to ensure the <strong>Preliminary design stage</strong> is completed to the satisfaction of the client within the two submissions.</p>
+
+                        <h3>d) Deliverables</h3>
+                        <p>The following drawings and documents shall be submitted in hard and soft copies:</p>
+                        <ul>
+                            <li>Site analysis report, highlighting applicable zoning and building by-laws, levelling and drainage proposals, and environmental considerations.</li>
+                            <li>Preliminary master plan showing placement and orientation of blocks, entries and exits, and internal circulation.</li>
+                            <li>Schematic floor plans indicating the arrangement of rooms and sections indicating heights. The basement (if applicable) and entry levels regarding the site and roads shall be shown.</li>
+                            <li>Any deviation/ non-compliance from the guidelines shall be presented in the form of a deviation document with reasons for the deviation/non-compliance.</li>
+                            <li>Statement of areas, coverage, FAR (Floor Area Ratio)/FSI (Floor Space Index).</li>
+                            <li>Preliminary design report on explaining the architectural design approach with reference images for understanding form and aesthetics.</li>
+                            <li>Any additional drawings/documents which the architect desires.</li>
+                            <li>Block estimate.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. CONCEPT DESIGN -->
+                    <div class="content-block" id="content-concept-design" style="display: none;">
+                        <h1 class="article-title">Key stages: 2. Concept design submissions</h1>
+                        
+                        <h3>a) Purpose</h3>
+                        <p><strong>Concept Design Submission stage II</strong> is to enable the client to visualize the project in terms of floor areas, and the number of floors and to gain an understanding of the engineering services and sustainability measures being incorporated. This should enable the client to know how the design meets their vision and requirements. The clinical/management team could begin (a) high-level preparation for equipping and staffing the facility and (b) budgeting for initial recurring expenditures. The client will approve the plans and areas, proposed engineering systems, finishes, and budgetary estimates.</p>
+                        <p>Final design submission would enable the client to sign off the design process and allow progression to statutory approvals and construction.</p>
+
+                        <h3>b) Process</h3>
+                        <p>Stage II will commence on written approval to proceed, after the completion of stage I, by the client. The architect shall incorporate any inputs/comments while developing the design. The structural and services engineering inputs will be considered and incorporated.</p>
+                        <p>The Master Plan and floor plans with the location of doors and windows and internal dimensions of the rooms will be submitted to show compliance with these guidelines.</p>
+                        <p>Any suggestions/comments/inputs will be considered by the architect. Concept design with layouts of furniture will be submitted for the client's approval. Proposals for all engineering systems, finishes, and budgetary estimates submitted will be approved with suggestions/comments by the client to proceed to the final phase of design.</p>
+                        <p>The final concept design will incorporate any suggestions/comments/input on the stage II submission and will comprise a master plan with the landscape, floor plans with furniture layouts, envelope design, and interiors. All guidelines in this document, other than expressly accepted deviations would have complied with the design. All statutory requirements are met and provisions for all engineering services are incorporated in the drawings. In essence, every design decision that influences the outcome of the project and requires the consent of the client would be obtained and recorded in drawings and documents and submitted for the approval of the client.</p>
+
+                        <h3>c) Considerations</h3>
+                        <p>If desired, the client may request one revised submission of the master plan and floor plans in stage II to enable finalization and acceptance of the master plan and the floor plans and sign-off on areas.</p>
+                        <p>The architect shall incorporate changes in the aesthetics, form of the buildings, and selection of materials as desired by the client. The final designs shall enable the client to sign off inputs on all aspects of the design.</p>
+
+                        <h3>d) Deliverables in stage II</h3>
+                        <p>The following drawings and documents shall be submitted in hard and soft copies:</p>
+                        <ul>
+                            <li>Final master plan with roads, footpaths and drains, and levels.</li>
+                            <li>Floor plans with doors and windows and layout of furniture and room inner dimensions and room areas.</li>
+                            <li>Architectural design report.</li>
+                            <li>Design basis and approach reports for structural, electrical, plumbing, HVAC, fire alarm, firefighting, building management systems, and landscape designs from consultants.</li>
+                            <li>Schedule floor wall and ceiling finishes.</li>
+                            <li>Statement of areas.</li>
+                            <li>Landscape drawing showing hard and soft treatments.</li>
+                            <li>Drainage plan.</li>
+                            <li>Sections and elevations sufficient to explain the design.</li>
+                            <li>Specifications in brief for all materials and systems proposed in the design.</li>
+                            <li>Preliminary designs for structural, electrical, plumbing, HVAC, fire alarm, and firefighting and building management systems.</li>
+                            <li>Budgetary estimate for the entire project including all engineering services.</li>
+                            <li>Artist's renderings of the project, both interior and exterior sufficient for the client to appreciate and approve the design.</li>
+                            <li>Scale model of the project (optional).</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. STATUTORY APPROVAL -->
+                    <div class="content-block" id="content-statutory-approval" style="display: none;">
+                        <h1 class="article-title">Key stages: 3. statutory approval submission</h1>
+                        
+                        <h3>a) Purpose</h3>
+                        <p>To obtain a building permit</p>
+
+                        <h3>b) Process</h3>
+                        <p>The architect will identify all the statutory approvals required to commence the construction of the project. The client will be made aware of all the documents required for submission to the statutory authorities.</p>
+                        <p>The architect will make available all the technical drawings and documents in the acceptable format with the required signatures and certificates to enable the client to submit applications and obtain approvals.</p>
+
+                        <h3>c) Deliverables at stage IV</h3>
+                        <p>All documents and drawings are prescribed by the various statutory bodies.</p>
+                    </div>
+
+                  <!-- C. FLOWCHART -->
+                    <div class="content-block" id="content-flowchart" style="display: none;">
+                        <h1 class="article-title">C. Flowchart</h1>
+                        
+                        <div style="padding: 30px; background: #f8f8f8; border-radius: 12px; border-left: 5px solid #c9a961;">
+                            <p style="margin-bottom: 15px; color: #2c2c2c; font-weight: 600; font-size: 1.3rem;">
+                                Design & development flowchart
+                            </p>
+                            <p style="margin-bottom: 25px; color: #4a4a4a; line-height: 1.8; font-size: 1.1rem;">Here is the flowchart that illustrates the steps and areas covered in each stage succinctly. This comprehensive diagram shows the complete workflow from initial planning through to final statutory approvals.</p>
+                            
+                            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                                <a href="2 - Building design and development - Flow chart FINAL.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: #2c2c2c; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+                                    <i class="fas fa-eye" style="font-size: 1.1rem;"></i>
+                                    <span>Click to View Flowchart </span>
+                                </a>
+                                
+                               
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="content-navigation-static">
+                    <button class="nav-btn prev-btn" id="prevBtn" style="display: flex;">
+                        <i class="fas fa-chevron-left"></i>
+                        <span>Previous Chapter</span>
+                    </button>
+                    <button class="nav-btn next-btn" id="nextBtn" style="display: flex;">
+                        <span>Next</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripit.js"></script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>High-level Considerations | Eye Care Design</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Architectural Manual</h2> 
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="menu-content">
+                <div class="close-btn" id="closeBtn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#guidelines">Guidelines</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="sidebar-toggle-btn" id="sidebarToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="chapter-container">
+            <aside class="chapter-sidebar" id="chapterSidebar">
+                <div class="sidebar-header">
+                    <div class="close-btn sidebar-close-btn" id="sidebarCloseBtn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <h3>High-level considerations</h3>
+                </div>
+                
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <div class="nav-link parent-link active" data-content="intro">
+                                <i class="far fa-circle"></i>
+                                <span>Introduction</span>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <div class="nav-link parent-link" data-content="functional-adequacy">
+                                <i class="far fa-circle"></i>
+                                <span>A) Functional adequacy</span>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <div class="nav-link parent-link" data-content="operational-efficiency">
+                                <i class="far fa-circle"></i>
+                                <span>B) Operational efficiency</span>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="nav-link parent-link" data-content="resources">
+                                <i class="far fa-circle"></i>
+                                <span>List of resources</span>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="chapter-content">
+                <div class="content-wrapper">
+                    <div class="content-header">
+                        <div class="breadcrumb" id="breadcrumbNav">
+                   </div>
+                    <!-- 50th Logo OUTSIDE breadcrumb box -->
+                    <div class="chapter-logo-container">
+                        <img src="50 th_Final_Logo_2025_Black.png" alt="Aravind Eye Care Logo" class="chapter-logo">
+                        </div>
+                    </div>
+
+                <article class="main-article">
+                      <div class="content-block" id="content-intro">
+                            <h1 class="article-title">High-level considerations for building size, layout, and design</h1>
+                            
+                            <p>While designing an eye hospital, it helps to start with the macro-level or big-picture details and once firmed up, have them direct the micro details. This will ensure that all immediately relevant factors and needs, as well as those that would be in the future, are all considered. The high-level considerations can be grouped into two. One set of considerations would relate to getting right, the adequacy of the building - i.e., building size, and space for all envisaged services or activities. The second set of considerations would help in getting the operational aspects of the building right to promote efficient flows, patient safety, better security, etc. The following details are intended to help in the right building design and future-proof it to some extent.</p>
+                        </div>
+
+                        <!-- A) FUNCTIONAL ADEQUACY -->
+                        <div class="content-block" id="content-functional-adequacy" style="display: none;">
+                            <h1 class="article-title">A. High-level consideration to ensure functional adequacy of the building</h1>
+                            
+                            <h3>1) Patient volume</h3>
+                            <p>Patient volume is possibly the most significant influencer of the building size and design. Since buildings cannot expand at will or short notice, it will be good to think about and plan for the ultimate volume that you would like the building to handle (subject to the limitations of space availability). This estimation should be disaggregated for outpatients and surgery. This will then need to be translated into a daily patient load. Simple averages are not realistic, since, in most instances, there tend to be daily and seasonal fluctuations in patient volumes, especially in hospitals that do not have an appointment system. It is advisable to consider all these factors and arrive at the daily patient volume that the hospital should be able to handle in the long run.</p>
+                            
+                            <h4>Example:</h4>
+                            <ul>
+                                <li>Estimated annual patient volume: 45,000 OPD visits & 3,000 surgeries</li>
+                                <li>Daily average (considering 300 working days): 150 OPD visits & 10 surgeries</li>
+                                <li>Daily realistic range: 100 - 250 OPD visits & 5 - 25 surgeries</li>
+                            </ul>
+                            <p>In this scenario, one should ideally plan the building to handle 200 to 250 OPD visits and perform 20-25 surgeries a working day. This will comfortably handle the days with peak patient volumes and accommodate growth to a certain extent.</p>
+
+                            <h3>2) Scope of services - clinical,academic and research</h3>
+                            <p>All activities eventually will need space, amongst other things. It is in this context, it is important to visualize the scope of services. The following are some of the questions that would need to be thought through:</p>
+                            <ul>
+                                <li>Whether this would be a secondary or a tertiary level facility; if tertiary, the sub-specialities that would be offered; would an eye bank be part of the need?</li>
+                                <li>List all support services like different laboratories, radiology, etc.; what would be in-house and what investigations would be referred to external facilities?</li>
+                                <li>Would the hospital routinely engage in academic activities; if yes, would it be for internal staff only or others as well? If some are accredited courses, are there mandated space requirements?</li>
+                                <li>Clarity on research activities - Some research activities like basic research require dedicated space while clinical trials, retrospective studies and epidemiologic studies would at best need an office space. The size of space needed in both instances would depend on the scale of such activities.</li>
+                            </ul>
+                            <p><strong>Checklist – Scoping the services for layout design</strong></p>
+                            <div class="resource-simple-buttons" style="margin-top: 15px; margin-bottom: 25px;">
+                                <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/2 - Scoping the Services for Layout Design  - Checklist.pdf', 'pdf')">
+                                    <i class="fas fa-eye"></i> Click to view checklist
+                                </button>
+                               <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/2 - Scoping the Services for Layout Design  - Checklist.xlsx')">
+                                    <i class="fas fa-download"></i> Click to download excel checklist
+                                </button>
+                            </div>
+
+                            <h3>3) Patient categories - private,  free, subsidized & outreach</h3>
+                            <p>Some providers cater their services to essentially one category of patients. For them, this would not be an important consideration. However, several hospitals are much more inclusive by having people of different economic strata access services in their hospitals. For such hospitals, this would be an important consideration. From a building design perspective, inputs will need to be given on:</p>
+                            <ul>
+                                <li>Patient types and their proportions</li>
+                                <li>Patient intake, clinical workflow, and accommodation for each type of patient - what will be the common flow and what will be separate.</li>
+                                <li>Service differentiation - while clinical services would follow a common protocol, many providers would want to differentiate the non-clinical domain, like air-conditioning, locating the wards (inpatient stay), restricted visiting hours, dining facilities, etc.</li>
+                            </ul>
+
+                            <h3>4) Policies</h3>
+                            <p>Policies have a significant influence on building design and this needs to be recognized upfront. Every provider would have their philosophy and strategy, which in turn would drive their policies governing the operational details. The following have implications from a building design perspective:</p>
+                            <ul>
+                                <li>Is the patient intake through appointments or walk-ins? This, amongst other things, will have a bearing on waiting areas.</li>
+                                <li>Will there be inpatients or a fully ambulatory facility with no overnight admissions?</li>
+                                <li>Will there be separate areas for private and free/subsidized patients for registration, outpatient examinations, inpatient stay, etc.?</li>
+                            </ul>
+
+                            <h3>5) Scope of patient amenities</h3>
+                            <p>Since patients could be spending several hours in the hospital and most would be required to buy spectacles or medicines, it would be necessary to decide how these would be met. Some important amenities both from patient and building perspectives are:</p>
+                            <ul>
+                                <li>Arrangements for food - cafeteria, coffee shop, etc.</li>
+                                <li>Medical shop</li>
+                                <li>Optical shop</li>
+                            </ul>
+                            <p>When it comes to optical and medical shops space will be required to hold the inventory and accommodate the back office functions such as accounting, supply chain management and for the opticals, a workspace for surfacing the lenses to the required power and fitting them in the frames. Some aspects of this can be outsourced as well. Planning for this ahead will ensure adequate space allocation and layout to ensure operational efficiency.</p>
+                            <p><strong>Patient amenities</strong></p>
+                            <div class="resource-simple-buttons" style="margin-top: 15px; margin-bottom: 25px;">
+                                <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/A5 Patient Amenities.mp4', 'mp4')">
+                                    <i class="fas fa-eye"></i> Click to view video
+                                </button>
+                                 <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/A5 Patient Amenities.pptx')">
+                                    <i class="fas fa-download"></i> Click to download PPTX
+                                </button>
+                            </div>
+
+                            <h3>6) Support services</h3>
+                            <p>Decisions on the support services like cafeteria, laundry, the extent of building maintenance facilities, wastewater treatment, plant for distilled or clean water, centralized UPS (uninterrupted power supply), centralized air-conditioning, hold area hospital waste including discarded furniture and equipment, etc., have a bearing on space requirement and building design.</p>
+
+                            <h3>7) Housing for staff</h3>
+                            <p>Hospitals need to function round the clock and this is true for eye hospitals too if they would be having inpatients staying overnight. Hence, space permitting, many hospitals would like to have the staff staying on campus. This also eliminates challenges in travel logistics and commute time to work. Good housing also attracts staff to the organization and could help with better retention. This becomes particularly important if renting a good house is a challenge, wherever the hospital is located. Having said all this, there are also pragmatic considerations of the availability of land and finances. For these reasons, many hospitals do not provide on-campus housing for staff. Either way, this input would need to be given at the planning stage.</p>
+
+                            <h3>8) Phasing of the building project</h3>
+                            <p>Regardless of the financial constraints, it is always a good idea to plan for the full anticipated patient volumes and other activities envisaged. This is on account of the functional dependencies and patient flow requirements. For example, it would be very desirable to have all outpatient clinics and related services (like patient registration, medical records, etc.) in adjoining areas. If these were not planned for in advance, either there would be extensive demolition and remodelling or locating additional outpatient clinics in a different location and this may lead to duplication of some of the services. This would also result in a lot of ongoing non-value-added movement and coordination. This holds good for operating rooms as well, wherein the challenges of managing ORs in multiple locations will be of a higher magnitude.</p>
+                            <p>Thus, it is advisable to have a master plan (subject to the limitations of space availability) with the different phases thought through. If financial resources are not available upfront, the building could come up in two or three phases.</p>
+                            <p>Ophthalmic technology is evolving very rapidly, and new diagnostic treatment modalities are constantly added. There is also an emerging trend of more and more interventions happening in outpatient clinics like lasers or injections. Even major surgeries done in operating rooms are increasingly ambulatory procedures. With such development constantly happening, it would not be possible to predict the impact of these, on space requirements. Thus, even with detailed planning, hospitals will run into space constraints. Hence to the extent feasible, it is desirable to provide some unassigned areas on each floor.</p>
+                            <p><strong>Example:  phasing & expansion</strong></p>
+                            <div class="resource-simple-buttons" style="margin-top: 15px; margin-bottom: 25px;">
+                                <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/A8 Phasing & Expansion.mp4', 'mp4')">
+                                    <i class="fas fa-eye"></i> Click to view video
+                                </button>
+                                <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/A8 Phasing & Expansion.pptx')">
+                                    <i class="fas fa-download"></i> Click to download PPTX
+                                </button>
+                            </div>
+
+                            <h3>9) Leveraging nature</h3>
+                            <p>To the extent feasible the orientation of the building, layout of the corridors and rooms can be positioned so as to leverage natural lighting and ventilation to the fullest. This creates a healthier environment and also reduces the lighting and HVAC (Heating Ventilation and Air Conditioning) costs.</p>
+                            <p><strong>Example:Leveraging Nature</strong></p>
+                            <div class="resource-simple-buttons" style="margin-top: 15px; margin-bottom: 25px;">
+                                <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/A9 Leveraging Nature.mp4', 'mp4')">
+                                    <i class="fas fa-eye"></i> Click to view video
+                                </button>
+                                <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/A9 Leveraging Nature.pptx')">
+                                    <i class="fas fa-download"></i> Click to download PPTX
+                                </button>
+                            </div>
+
+                            <h3>10) Environmental considerations</h3>
+                            <p>Thinking through water treatment or recycling, solar power generation right at the design stage gives more options than when trying to retrofit these. Depending on the number of floors, the rooftop should provide enough area to generate 15% to 25% of the power consumed and this can result in significant recurrent savings, especially with the cost of the solar panels rapidly declining and the grid power cost rising. Housing for staff and leveraging nature as described above, also contribute significantly to reducing the carbon footprint.</p>
+
+                            <h3>11) Maintenance</h3>
+                            <p>Every part of the building will eventually require maintenance. Some on a daily basis, some periodically and some rarely as the need arises. Maintenance can be expensive and labour-intensive. The quality of maintenance is a strong determinant of the ambience and thus the level of patient and staff satisfaction. Certain types of flooring or wall finishes are easier to maintain than others. Some flooring materials become better with usage (and good maintenance) while others deteriorate with usage, regardless of maintenance. Similarly, some electrical and other fittings (switches, etc.), would literally last a lifetime while some other brands may require frequent replacements. Bulbs in high ceilings are hard to reach and replace. Likewise, external windows or glass cladding for aesthetics will require periodic cleaning and arrangements for this will need to be thought through and provided.</p>
+                        </div>
+
+                        <!-- B) OPERATIONAL EFFICIENCY -->
+                        <div class="content-block" id="content-operational-efficiency" style="display: none;">
+                            <h1 class="article-title">B)High-level operational consideration for the building</h1>
+                            
+                            <p>Several factors, if considered upfront right at the planning stage can make the building more efficient and functional. Some of the more important ones are discussed in this section.</p>
+
+                            <h3>1) People traffic</h3>
+                            <p>To start with it helps to recognize the functions that are used by many versus by a few. This applies to both patients and staff. For instance, outpatient services tend to be used the most – by both patients and staff who provide the service. Hence, such areas must be easily accessible. So, placing them right at the entrance would make sense. On the contrary, some admin areas like accounts or stores would be accessed by only a few and that too mainly the staff. These could be in the interiors of the building.</p>
+
+                            <h3>2) Restricted access</h3>
+                            <p>In certain zones like operating rooms, access is restricted to specific staff and patients scheduled for surgery. Cleanliness and sterility must be of the highest order. The people accessing these areas must either know the protocol or must be closely guided (as in the case of patients). Given all this, the layout should not permit unintended people to wander into such areas. Thus, these spaces must be secluded wherein access can be limited and controlled. This would also apply to less critical areas like classrooms, staff meeting rooms, or back-end operations like stores, etc.</p>
+                            <p><strong>Example: Flow & building configuration</strong></p>
+                            <div class="resource-simple-buttons" style="margin-top: 15px; margin-bottom: 25px;">
+                                <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/B1 Flow & Building Configuration.mp4', 'mp4')">
+                                    <i class="fas fa-eye"></i> Click to view video
+                                </button>
+                                <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/B1 Flow & Building Configuration.pptx')">
+                                    <i class="fas fa-download"></i> Click to download PPTX
+                                </button>
+                            </div>
+
+                            <h3>3) Dependencies</h3>
+                            <p>In a hospital, there are a lot of interdependencies. Some require frequent interactions as with laboratories and other common investigations, while some could be occasional as with equipment maintenance departments. If specific supplies (like IOL) must be obtained for each cataract surgery, then it would save a lot of movement and coordination, if there is a store inside or in the proximity of operating rooms. The layout of various services in a building is not easily amenable to changes, later on. If the positioning is not thoughtfully done, it can result in a lot of unnecessary movement, needing coordination and more time to accomplish the tasks. All of this translates to higher staffing needs, criss-cross movement leading to chaos, the potential for errors and compromised patient experience. Wherever there is a high interdependence, especially between specific departments, it would be best to integrate them in the same area - e.g. optometry work-up and ophthalmologist examination, which would be required for every patient, can be designed to be in one integral module.</p>
+
+                            <h3>4) Building orientation and sizing the footprint</h3>
+                            <p>The footprint of the building or the plinth area is determined by two factors - first by the restriction imposed by the land area and regulations about how much space has to be left around the building and then by the spaces that have to be accommodated in the ground floor. If the land area is not a restrictive factor, then one has the option of deciding the functions that need to be at the entry-level. Priority has to be given to patients. So it will be good to have the patient arrival, registration and general outpatient services at the entry level along with associated support services like reception, patient registration and amenities like a patient cafeteria. It would also help to have some of the administrative departments which have "external customers", such as accounts that are frequented by suppliers. Admin departments that predominantly have "internal customers" such as the Personnel and HR Department, stores can be at other levels, based on workflow requirements.</p>
+                            <p>In general, it is advisable to keep the plinth area to the minimum and build vertically with more floors, without compromising the functional requirements. This would leave land area for future expansion and other needs. Human interactions are also more frequent in smaller buildings/floors. Smaller plinth areas will also have fewer entry/exit points, making it easier from a security perspective. The overall movement also reduces. All these factors can be considered while the high-level configuration of the building.</p>
+
+                            <h3>5) Clinical care protocols and their impact on space requirements and layout</h3>
+                            <p>Clinical protocols have a direct influence on the space requirements and layout.</p>
+                            
+                            <h4>a) Outpatient care:</h4>
+                            <p>Overall, there are two clinical pathways followed in outpatient services. In one pathway, the patient enters a room wherein all the investigations and examinations by the ophthalmologist take place. It would have all equipment required for common investigations and examinations. In addition to the ophthalmologist, one or two technicians will move in and out of the room. In the other clinical pathway, the outpatient services are broken down into multiple services, each with its own space, equipment and staff. The separate service stations could be VA measurement, IOP measurement, refraction, etc. In this pathway, the patients move from one station to another while the technicians stay put in the same station. Both are widely adopted and each has its own advantages and disadvantages. From a building design perspective, each requires different space and layout considerations. Thus the mode of examining the patient will need to be communicated to the architect. In addition, the dependencies, as described earlier, will also need to be considered during the outpatient layout planning. One can consider creating a common area for advanced investigations that require expensive equipment and/or special skills, sub-speciality if the projected patient volumes won't yield the required scale for placing them in individual sub-specialty clinics.</p>
+
+                            <h4>b) Operating room complex:</h4>
+                            <p>This tends to be the most complex and also most expensive part of the entire building on account of all requirements that have to be met towards air quality, sterility, positive air pressure, etc. While this will be dealt with in detail in a later section, it is good to recognize that there are some generic flows, commonly practiced.</p>
+                            
+                            <h4>i) Operating room:</h4>
+                            <p>In many developing countries it is not uncommon to see each surgeon having two operating tables. While the surgeon operates on one, the next patient gets prepped on the second table. This is done to minimize the time between surgeries given the reality of having very few surgeons and often having to perform a high number of surgeries. This is largely to enhance throughput and efficiency. However, in some countries either the regulation of quality standards doesn't permit it, even though there is no evidence associated with an increased risk of infection. In such situations, an operating room has a single table. Even in this instance, higher productivity can be achieved by having a prep area adjoining the operating rooms, so that the patients can be quickly wheeled in. While there are pros and cons with two-table versus single-table systems, it does have an implication on the design of the operating room size and layout.</p>
+
+                            <h4>ii) Flows – sterile and unsterile supplies:</h4>
+                            <p>All operating rooms require sterile surgical instruments, linen and supplies. Likewise the used instruments, linen and waste have to be taken out, some for discarding and the others for cleaning and resterilization. Here the traditional approach was to create a "dirty corridor" for the movement of unsterile items and medical waste to their destination within the operating room complex. A recent approach is to recognize that it is the sterile goods that need protection against contamination, so there is the emerging concept of a sterile corridor that connects the CSSD and sterile stores directly to each of the operating rooms through a separate door or a pass box. Both these approaches are in vogue and have different implications for the layout.</p>
+
+                            <h4>iii) Flows - patients and staff:</h4>
+                            <p>In order to ensure utmost sterility inside the operating rooms, it is ideal to create a restricted semi-sterile zone between the general area and the sterile zone leading to the operating rooms. The restricted semi-sterile zone will be accessible only to the patients and OR staff with appropriate preparation and attire. In addition, having a unidirectional flow helps both in maintaining sterility and efficiency. Clearly all of these have to be decided upfront, in view of the design and layout implications.</p>
+                            <p><strong>Example: B5b OT complex planning considerations</strong></p>
+                            <div class="resource-simple-buttons" style="margin-top: 15px; margin-bottom: 25px;">
+                                <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/B5b OT Complex Planning Considerations.mp4', 'mp4')">
+                                    <i class="fas fa-eye"></i> Click to view video
+                                </button>
+                                <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/B5b OT Complex Planning Considerations.pptx')">
+                                    <i class="fas fa-download"></i> Click to download PPTX
+                                </button>
+                            </div>
+
+                            <h3>6) Building material types for flexibility, realignment, and cost-effectiveness</h3>
+                            <p>Because of the rapidly advancing technologies that sometimes require changes in clinical protocols, the need to redesign and change the layout occurs periodically. Over the years there has been a sharp drop in length of hospitalization and more and more procedures are becoming ambulatory, making inpatient stay rooms redundant. Need to reorganize, also happens as the patient volume increases. It will be helpful to keep this in mind this long-term possibility during the building design and in the choice of construction materials, without compromising the functionality and patient/staff experience.</p>
+                        </div>
+
+                        <!-- LIST OF RESOURCES -->
+                        <div class="content-block" id="content-resources" style="display: none;">
+                            <h1 class="article-title">List of resources</h1>
+                            
+                            <div class="resources-list">
+                                <!-- Resource 1 -->
+                                <div class="resource-simple-item">
+                                    <h3>1. Scoping the services for layout design</h3>
+                                    <p>Comprehensive checklist to help you define and scope all services needed for your eye hospital layout planning.</p>
+                                    <div class="resource-simple-buttons">
+                                        <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/2 - Scoping the Services for Layout Design  - Checklist.pdf', 'pdf')">
+                                            <i class="fas fa-eye"></i> Click to view checklist
+                                        </button>
+                                        <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/2 - Scoping the Services for Layout Design  - Checklist.xlsx')">
+                                            <i class="fas fa-download"></i> Click to download excel checklist
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Resource 2 -->
+                                <div class="resource-simple-item">
+                                    <h3>2. A5 Patient Amenities</h3>
+                                    <p>Detailed guide on planning patient amenities including cafeterias, medical shops, and optical shops.</p>
+                                    <div class="resource-simple-buttons">
+                                        <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/A5 Patient Amenities.mp4', 'mp4')">
+                                            <i class="fas fa-eye"></i> Click to view video
+                                        </button>
+                                        <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/A5 Patient Amenities.pptx')">
+                                            <i class="fas fa-download"></i> Click to download PPTX
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Resource 3 -->
+                                <div class="resource-simple-item">
+                                    <h3>3. A8 Phasing & Expansion</h3>
+                                    <p>Strategic planning guide for phased building projects and future expansion considerations.</p>
+                                    <div class="resource-simple-buttons">
+                                        <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/A8 Phasing & Expansion.mp4', 'mp4')">
+                                            <i class="fas fa-eye"></i> Click to view video
+                                        </button>
+                                        <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/A8 Phasing & Expansion.pptx')">
+                                            <i class="fas fa-download"></i> Click to download PPTX
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Resource 4 -->
+                                <div class="resource-simple-item">
+                                    <h3>4. A9 Leveraging Nature</h3>
+                                    <p>Best practices for incorporating natural lighting and ventilation in hospital design.</p>
+                                    <div class="resource-simple-buttons">
+                                        <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/A9 Leveraging Nature.mp4', 'mp4')">
+                                            <i class="fas fa-eye"></i> Click to view video
+                                        </button>
+                                        <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/A9 Leveraging Nature.pptx')">
+                                            <i class="fas fa-download"></i> Click to download PPTX
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Resource 5 -->
+                                <div class="resource-simple-item">
+                                    <h3>5. B1 Flow & building configuration</h3>
+                                    <p>Comprehensive guide on patient flow, staff movement, and optimal building configuration strategies.</p>
+                                    <div class="resource-simple-buttons">
+                                    <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/B1 Flow & Building Configuration.mp4', 'mp4')">
+                                    <i class="fas fa-eye"></i> Click to view video
+                                </button>
+                                <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/B1 Flow & Building Configuration.pptx')">
+                                    <i class="fas fa-download"></i> Click to download PPTX
+                                </button>
+                            </div>
+                                    </div>
+                                </div>
+
+                                <!-- Resource 6 -->
+                                <div class="resource-simple-item">
+                                    <h3>6. B5b OT Complex planning considerations</h3>
+                                    <p>Detailed planning guide for operating theater complex including sterile zones, patient flows, and equipment layout.</p>
+                                    <div class="resource-simple-buttons">
+                                        <button type="button" class="btn-view" onclick="openFileViewer('highlevel Considerations/B5b OT Complex Planning Considerations.mp4', 'mp4')">
+                                    <i class="fas fa-eye"></i> Click to view video
+                                </button>
+                                <button type="button" class="btn-download" onclick="downloadFile('highlevel Considerations/B5b OT Complex Planning Considerations.pptx')">
+                                    <i class="fas fa-download"></i> Click to download PPTX
+                                </button>
+                            </div>
+
+                                    </div>
+                                </div>
+
+                            
+                            </div>
+                        </div>
+                    </article>
+
+                    <div class="content-navigation-static">
+                        <button class="nav-btn prev-btn" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                            <span>Previous Chapter</span>
+                        </button>
+                        <button class="nav-btn next-btn" id="nextBtn">
+                            <span>Next</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- File Viewer Modal -->
+        <div id="fileViewerModal" class="modal" style="display: none;">
+            <div class="modal-content-large">
+                <div class="modal-header" style="display: flex; align-items: center; justify-content: space-between; padding: 15px 20px;">
+                    <h2 id="fileViewerTitle" style="margin: 0; flex: 1; font-size: 1.2rem;">File Viewer</h2>
+                    <!-- Download button - only shows for downloadFile() function -->
+                    <button id="downloadButtonInViewer" onclick="downloadCurrentFile()" style="display: none; padding: 8px 16px; background: #c9a961; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 15px; font-size: 0.9rem; transition: background 0.3s;">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                    <span class="close-modal" onclick="closeFileViewer()" style="cursor: pointer; font-size: 28px; color: #666; font-weight: bold; line-height: 1;">&times;</span>
+                </div>
+                <div class="modal-body-viewer">
+                    <div id="fileViewerError" style="display: none; text-align: center; padding: 40px;"></div>
+                    <iframe id="fileViewerFrame" style="width: 100%; height: 70vh; border: none;"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripit.js"></script>
+    </body>
+    </html>

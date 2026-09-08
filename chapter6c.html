@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulatory and Inpatient Care | Eye Care Design</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Architectural Manual</h2> 
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+            <div class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#guidelines">Guidelines</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="sidebar-toggle-btn" id="sidebarToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="chapter-container">
+        <aside class="chapter-sidebar" id="chapterSidebar">
+            <div class="sidebar-header">
+                <div class="close-btn sidebar-close-btn" id="sidebarCloseBtn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <h3>Ambulatory and inpatient care</h3>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <div class="nav-link parent-link active" data-content="intro">
+                            <i class="far fa-circle"></i>
+                            <span>Introduction</span>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <div class="nav-link parent-link" data-content="design-considerations">
+                            <i class="far fa-circle"></i>
+                            <span>A) Ambulatory/inpatient care unit: design considerations</span>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <div class="nav-link parent-link" data-content="safety-considerations">
+                            <i class="far fa-circle"></i>
+                            <span>B) Key considerations to ensure safe stay</span>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="nav-link parent-link" data-content="resources">
+                            <i class="far fa-circle"></i>
+                            <span>List of resources</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="chapter-content">
+            <div class="content-wrapper">
+                <div class="content-header">
+                    <div class="breadcrumb" id="breadcrumbNav">
+                    </div>
+                    <!-- 50th Logo OUTSIDE breadcrumb box -->
+                    <div class="chapter-logo-container">
+                        <img src="50 th_Final_Logo_2025_Black.png" alt="Aravind Eye Care Logo" class="chapter-logo">
+                    </div>
+                </div>
+
+                <article class="main-article">
+                    <div class="content-block" id="content-intro">
+                        <h1 class="article-title">Ambulatory and inpatient care – design considerations</h1>
+                        
+                        <h2>Introduction</h2>
+                        
+                        <div style="display: flex; gap: 30px; align-items: flex-start; margin: 20px 0;">
+                            <div style="flex: 0 0 45%; min-width: 300px;">
+                                <img src="Chapter-5\Section 6C\Picture1.png" alt="Ambulatory and Inpatient Care" 
+                                     style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: pointer;"
+                                     onclick="openImageModal(this)">
+                            </div>
+                            <div style="flex: 1;">
+                                <p>In ophthalmic care, patients undergoing surgery, or a procedure aren't normally required to stay in the hospital. However, in some instances a short stay or a multi-day stay may be necessitated by the level of clinical observations required during the post-operative recovery process. Sometimes patients who travel long distances may opt for a multi-day stay to complete the cycle of undergoing clinical procedure/surgery and the immediate post-operative follow-up.</p>
+                            </div>
+                        </div>
+
+                        <p>The ambulatory/inpatient care consists of the admission process, stay in the wards and discharge from the hospital. The key functions include –</p>
+
+                        <div style="margin: 30px 0; overflow-x: auto;">
+                            <table style="width: 100%; border-collapse: collapse; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                <thead>
+                                    <tr>
+                                        <th style="background-color: #c9a961; color: white; padding: 15px; text-align: left; border: 1px solid #ddd; font-size: 1.1em; width: 50%;">
+                                            Admission/discharge counter(s)
+                                        </th>
+                                        <th style="background-color: #c9a961; color: white; padding: 15px; text-align: left; border: 1px solid #ddd; font-size: 1.1em; width: 50%;">
+                                            Ward – short and multi-day stay
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 15px; border: 1px solid #ddd; vertical-align: top; background-color: #fff;">
+                                            <p style="margin: 0 0 10px 0; color: #000; line-height: 1.6;">
+                                                Patient admission process which includes cross-checking the paperwork for each patient.
+                                            </p>
+                                            <p style="margin: 0 0 10px 0; color: #000; line-height: 1.6;">
+                                                Managing patient records (electronic/ paper)
+                                            </p>
+                                        </td>
+                                        <td style="padding: 15px; border: 1px solid #ddd; vertical-align: top; background-color: #fff;">
+                                            <p style="margin: 0 0 10px 0; color: #000; line-height: 1.6;">
+                                                Accommodating patients admitted to the hospital after cross-checking the paperwork
+                                            </p>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 15px; border: 1px solid #ddd; vertical-align: top; background-color: #fff;">
+                                            <p style="margin: 0; color: #000; line-height: 1.6;">
+                                                Managing billing and financial transactions
+                                            </p>
+                                        </td>
+                                        <td style="padding: 15px; border: 1px solid #ddd; vertical-align: top; background-color: #fff;">
+                                        <p style="margin: 0 0 10px 0; color: #000; line-height: 1.6;">
+                                                Extending clinical care and supervision by the doctors and nurses as per the defined protocol during the patient's stay.
+                                            </p>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 15px; border: 1px solid #ddd; vertical-align: top; background-color: #fff;">
+                                            <p style="margin: 0; color: #000; line-height: 1.6;">
+                                                Allocation of beds (for extended stay)
+                                            </p>
+                                        </td>
+                                        <td style="padding: 15px; border: 1px solid #ddd; vertical-align: top; background-color: #fff;">
+                                            <p style="margin: 0 0 10px 0; color: #000; line-height: 1.6;">
+                                                Clinical exams and diagnostics pre-operatively and post-operatively
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 15px; border: 1px solid #ddd; vertical-align: top; background-color: #fff;">
+                                            <p style="margin: 0 0 10px 0; color: #000; line-height: 1.6;">
+                                                Patient discharge process Handling patient transfers to another health facility when such a need arises (due to medical emergencies)
+                                            </p>
+                                        </td>
+                                        <td style="padding: 15px; border: 1px solid #ddd; vertical-align: top; background-color: #fff;">
+                                            <p>Preparing the discharge summary and related paperwork to discharge patients</p>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>Since ophthalmic surgeries and procedures are largely elective, admissions can be planned for both ambulatory and multi-day stays depending on the surgery scheduling and patients' convenience. The emergency admissions which are infrequent, can be handled as per the situation.</p>
+                    </div>
+
+                    <div class="content-block" id="content-design-considerations" style="display: none;">
+                        <h2>A. Ambulatory/inpatient care unit: design considerations</h2>
+                        
+                        <h3>a)Admission/discharge counter area</h3>
+                        <p>Can be planned as a separate lane along side the outpatient registration. This is to ensure an efficient work process, HR, handling of financial transactions and at the same time optimize available space. A separate area and counters for the admission process can be considered in a high-volume setting that handles 100+ admissions a day. This is to avoid bottlenecks and delays in outpatient registration.</p>
+
+                        <p>These counters should be provided with adequate storage area for general stationery supplies and medical records of patients who will be undergoing surgery/procedure on a given day. This planning will avoid any delays due to the retrieval of medical records. This wouldn't be a consideration for hospitals fully on electronic medical records. Other considerations include:</p>
+
+                        <ul style="margin-left: 30px; line-height: 1.8;">
+                            <li>Waiting area for patients to avoid crowding at the counter</li>
+                            <li>Locating it close to public amenities such as toilets for patients, drinking water</li>
+                            <li>Television displays for communication & awareness creation</li>
+                            <li>Alcove to hold wheelchairs, trolleys, etc.</li>
+                            <li>Safety provisions for staff and secured storage system for money handling</li>
+                        </ul>
+
+                        <h3>b) Ambulatory care ward</h3>
+                        <p>Most patients increasingly opt for short-stay in an eye hospital. Some hospitals, by design, offer only ambulatory without any overnight stay. The number of beds in an ambulatory area is dependent on the daily expected surgical load. It is preferable to plan for curtains between the beds to maintain patient privacy.</p>
+
+                        <p>A small reception area can be planned to receive the patients and verify that all pre-op work-up has been carried out as per the protocol.</p>
+
+                        <p>Post-op counselling is critical to ensure better cooperation by the patients. A small area equipped with an audio-visual system with adequate space can be planned to facilitate group or individual instructions for post-op care and follow-up. This area ideally can be part of the operating room can be located to allow easy access to the operating rooms.</p>
+
+                        <h3>c) In-patient unit (multi-day stay)</h3>
+                        <p>A couple of options can be considered when planning for the multi-day stay.</p>
+
+                        <h4 style="margin-top: 25px; color: #2c2c2c; font-weight: 600;">Inpatient ward within the hospital building</h4>
+                        <p>The eye hospitals with outreach screening initiatives may house the patients for a couple of nights since they may be brought from a distance and cannot afford to stay outside. Hence it is ideal to include general wards with a nursing station and a doctor's exam room for immediate post-op exams. If the hospital handles low volumes, these patients can be examined in the regular OPD at a specific time of the day. Based on the volume of paying patients, where they come from and the type of surgeries done, it would be appropriate to include a few private rooms (suite/single/twin sharing). Private rooms can be of the size standard hotel room (10 ft x 20 ft including bath/toilet).</p>
+
+                        <p>Hospitals that plan to admit patients for overnight stay, it is important to understand that such stays are now not due to medical reasons but more for patient convenience and hence more akin to hotel stay. This perspective opens up other options for providing stay facilities to patients. Some of the hospitals in US and UK have successfully experimented with the following options:</p>
+
+                        <div style="background: #f8f9fa; padding: 20px; border-left: 4px solid #c9a961; margin: 20px 0;">
+                            <h4 style="margin-top: 0; color: #2c2c2c;">Option A:</h4>
+                            <p><strong>Constructing a building with a hotel-type stay</strong> with basic amenities ensures a clean environment. This can either be run by the hospital or outsourced to a reliable partner.</p>
+                        </div>
+
+                        <div style="background: #f8f9fa; padding: 20px; border-left: 4px solid #c9a961; margin: 20px 0;">
+                            <h4 style="margin-top: 0; color: #2c2c2c;">Option B:</h4>
+                            <p>Where possible, <strong>tie up with hospitality service providers</strong> located closer to the hospital premise to accommodate patients undergoing an eye surgery. This reduces capex costs and eliminates operational expenditure.</p>
+                        </div>
+
+                        <p>This approach can reduce the need to recruit a workforce to manage inpatient care, especially the caregiving team and to some extent, the support team as well.</p>
+                    </div>
+
+                    <div class="content-block" id="content-safety-considerations" style="display: none;">
+                        <h2>B. Key Considerations to ensure the safe stay of patients</h2>
+                        
+                        <div style="margin: 20px 0;">
+                            <div style="background: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #c9a961; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                <h3 style="margin-top: 0; color: #2c2c2c; font-size: 1.1em;">a) Fire exit</h3>
+                                <p style="margin-bottom: 0;">To provide an alternate exit in the case of emergencies as per the local building code</p>
+                            </div>
+
+                            <div style="background: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #c9a961; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                <h3 style="margin-top: 0; color: #2c2c2c; font-size: 1.1em;">b) Natural lighting</h3>
+                                <p style="margin-bottom: 0;">Design to allow natural lighting in the ward areas</p>
+                            </div>
+
+                            <div style="background: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #c9a961; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                <h3 style="margin-top: 0; color: #2c2c2c; font-size: 1.1em;">c) Flooring</h3>
+                                <p style="margin-bottom: 0;">Durable, non-slippery flooring to avoid falls</p>
+                            </div>
+
+                            <div style="background: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #c9a961; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                <h3 style="margin-top: 0; color: #2c2c2c; font-size: 1.1em;">d) Open areas</h3>
+                                <p style="margin-bottom: 0;">If possible, include open areas with free seating arrangements for patients and the attendants to relax during their stay</p>
+                            </div>
+
+                            <div style="background: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #c9a961; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                <h3 style="margin-top: 0; color: #2c2c2c; font-size: 1.1em;">e) CCTV systems</h3>
+                                <p style="margin-bottom: 0;">Provisions for CCTV systems to monitor routine functions and for security reasons</p>
+                            </div>
+
+                            <div style="background: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #c9a961; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                <h3 style="margin-top: 0; color: #2c2c2c; font-size: 1.1em;">f) Public address system</h3>
+                                <p style="margin-bottom: 0;">Public address system to communicate information or instructions at the time of emergencies</p>
+                            </div>
+
+                            <div style="background: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #c9a961; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                <h3 style="margin-top: 0; color: #2c2c2c; font-size: 1.1em;">g) Emergency call facilities</h3>
+                                <p style="margin-bottom: 0;">Emergency call facilities for staff and patients in all the areas accessed by patients such as patient toilets and bathrooms</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-block" id="content-resources" style="display: none;">
+                        <h2>List of Resources</h2>
+                        
+                        <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; margin-top: 20px;">
+                            <!-- Resource 1 -->
+                            <div style="margin-bottom: 30px; padding-bottom: 25px; border-bottom: 1px solid #ddd;">
+                                <h3 style="color: #2c2c2c; margin-bottom: 15px; font-size: 1.1em;">
+                                    1. Inpatient care checklist
+                                </h3>
+                                <p style="margin-left: 20px; margin-bottom: 10px; color: #666; font-size: 0.95em;">Applicable for the scenario where the hospital plans to construct an inpatient unit within the hospital premise</p>
+                                <div class="resource-buttons" style="margin-left: 20px;">
+                                    
+                                    <a href="A - Inpatient Care Checklist - Rooms- Equipment - Furniture.xlsx" download class="btn-resource">
+                                        <i class="fas fa-download"></i> Click to download excel 
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Resource 2 -->
+                            <div style="margin-bottom: 0;">
+                                <h3 style="color: #2c2c2c; margin-bottom: 15px; font-size: 1.1em;">
+                                    2. Clinical exam room in the ward area
+                                </h3>
+                                <p style="margin-left: 20px; margin-bottom: 10px; color: #666; font-size: 0.95em;">Design specifications and layout for clinical exam room within ward area</p>
+                                <div class="resource-buttons" style="margin-left: 20px;">
+                                    <button onclick="openFileViewer('1 - Wards - Clinical exam room.pdf', 'pdf')" class="btn-resource">
+                                        <i class="fas fa-eye"></i> Click to view pdf
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="content-navigation-static">
+                    <button class="nav-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                        <span>Previous Chapter</span>
+                    </button>
+                    <button class="nav-btn next-btn" id="nextBtn">
+                        <span>Next</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- File Viewer Modal -->
+    <div id="fileViewerModal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9);">
+        <div style="position: relative; width: 100%; height: 100%; display: flex; flex-direction: column;">
+            <div style="background: #2c2c2c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
+                <h3 id="fileViewerTitle" style="color: white; margin: 0; font-size: 1.2em; flex: 1;"></h3>
+                <button id="downloadButtonInViewer" onclick="downloadCurrentFile()" style="display: none; padding: 8px 16px; background: #c9a961; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 15px; font-size: 0.9rem; transition: background 0.3s;">
+                    <i class="fas fa-download"></i> Download
+                </button>
+                <button onclick="closeFileViewer()" style="background: none; border: none; color: white; font-size: 2em; cursor: pointer; padding: 0 10px;">&times;</button>
+            </div>
+            <div style="flex: 1; position: relative; background: #fff;">
+                <iframe id="fileViewerFrame" style="width: 100%; height: 100%; border: none;"></iframe>
+                <div id="fileViewerError" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 80%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.95);">
+        <span onclick="closeImageModal()" style="position: absolute; top: 20px; right: 40px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; z-index: 10001; transition: 0.3s;">&times;</span>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100%; padding: 40px;">
+            <div style="max-width: 90%; max-height: 90%; position: relative;">
+                <img id="modalImage" src="" alt="" style="width: 100%; height: auto; max-height: 85vh; object-fit: contain; border-radius: 8px;">
+                <div id="modalCaption" style="text-align: center; color: #fff; padding: 15px 0; font-size: 1.1em;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripit.js"></script>
+</body>
+</html>
